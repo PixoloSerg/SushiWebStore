@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <Resource name="jdbc/SushiStoreDB" 
+        type="javax.sql.DataSource"
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/sushistoredb?autoReconnect=true"
+        username="root" password="masterkey"
+        logAbandoned="true"
+        removeAbandoned="true"
+        removeAbandonedTimeout="60"
+        maxActive="100" maxIdle="30" maxWait="10000"
+    />
+    <Resource name="jdbc/SushiUsers" 
+        type="javax.sql.DataSource"
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/sushiusers?autoReconnect=true"
+        username="root" password="masterkey"
+        logAbandoned="true"
+        removeAbandoned="true"
+        removeAbandonedTimeout="60"
+        maxActive="100" maxIdle="30" maxWait="10000"
+    />
+</Context>
